@@ -7,12 +7,10 @@ CELLSIZE = 20
 ROWS = 30
 COLUMNS = 30
 
-def draw_map(arr, canvas):
-    for i, _ in enumerate(arr):
-        for j, _ in enumerate(arr[i]):
-            if arr[i][j] == 1:
-                pygame.draw.rect(canvas, (0,255,0),
-                                 pygame.Rect(i*CELLSIZE, j*CELLSIZE, CELLSIZE-2, CELLSIZE-2))
+def draw_map(i, j, canvas):
+    if arr[i][j] == 1:
+        pygame.draw.rect(canvas, (0,255,0),
+                         pygame.Rect(i*CELLSIZE, j*CELLSIZE, CELLSIZE-2, CELLSIZE-2))
 
 def calculate(neigh, c):
     if neigh < 2:
@@ -52,10 +50,11 @@ clock = pygame.time.Clock()
 running = True
 while running:
     canvas.fill((0,0,0))
+    clock.tick(10)
     for i, _ in enumerate(arr):
         for j, c in enumerate(arr[i]):
             arr[i][j] = detect_collision(arr, i, j, c)
-            draw_map(arr, canvas)
+            draw_map(i, j, canvas)
     pygame.display.update()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
