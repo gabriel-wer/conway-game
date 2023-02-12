@@ -23,4 +23,4 @@ If you set the flag '-e' or '--empty' the program will start with an empty array
 
 ```
 
-![image](https://user-images.githubusercontent.com/22137947/218338880-06c287a9-8922-4297-a815-0c1965a48aee.png)
+![image](https://i.imgur.com/N8tGFz9.gif)
