@@ -11,6 +11,7 @@ Based on the Conway game of life model [LINK](https://en.wikipedia.org/wiki/Conw
 
 ### NOTES
 If you just run the program normally, the cells are generated automagically using randomInts (0, 1)
+
 If you set the flag '-e' or '--empty' the program will start with an empty array and you can draw on it and press space when you're finished
 
 ### COMMANDS
