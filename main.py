@@ -56,7 +56,7 @@ clock = pygame.time.Clock()
 running = True
 while running:
     canvas.fill((0,0,0))
-    clock.tick(10)
+    if drawing: clock.tick(10)
     for i, _ in enumerate(arr):
         for j, c in enumerate(arr[i]):
             if drawing:
@@ -71,10 +71,9 @@ while running:
             if event.key == pygame.K_ESCAPE:
                 running = False 
             if event.key == pygame.K_SPACE: drawing = not drawing
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            if pygame.mouse.get_pressed()[0]:
-                mouse_pos = pygame.mouse.get_pos()
-                i = mouse_pos[0] // CELLSIZE
-                j = mouse_pos[1] // CELLSIZE
-                arr[i][j] = 1
-                draw_map(canvas, i, j)
+        if pygame.mouse.get_pressed()[0]:
+            mouse_pos = pygame.mouse.get_pos()
+            i = mouse_pos[0] // CELLSIZE
+            j = mouse_pos[1] // CELLSIZE
+            arr[i][j] = 1
+            draw_map(canvas, i, j)
