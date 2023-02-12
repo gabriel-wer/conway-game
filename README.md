@@ -11,3 +11,5 @@ Based on the Conway game of life model [LINK](https://en.wikipedia.org/wiki/Conw
 
 ### NOTES
 The cells are generated automagically using randomInts (0, 1)
+
+![image](https://user-images.githubusercontent.com/22137947/218338880-06c287a9-8922-4297-a815-0c1965a48aee.png)
