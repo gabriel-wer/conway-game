@@ -9,3 +9,5 @@ Based on the Conway game of life model [LINK](https://en.wikipedia.org/wiki/Conw
 - Any live cell with more than three live neighbours dies, as if by overpopulation.
 - Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
+### NOTES
+The cells are generated automagically using randomInts (0, 1)
