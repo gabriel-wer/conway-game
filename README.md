@@ -10,6 +10,7 @@ Based on the Conway game of life model [LINK](https://en.wikipedia.org/wiki/Conw
 - Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 ### NOTES
-The cells are generated automagically using randomInts (0, 1)
+If you just run the program normally, the cells are generated automagically using randomInts (0, 1)
+If you set the flag '-e' or '--empty' the program will start with an empty array and you can draw on it and press space when you're finished
 
 ![image](https://user-images.githubusercontent.com/22137947/218338880-06c287a9-8922-4297-a815-0c1965a48aee.png)
